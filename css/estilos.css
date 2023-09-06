@@ -1,0 +1,24 @@
+header{
+    border: green 1px solid;
+    padding: 3px;
+    margin: 5px;
+}
+main{
+    border: green 1px solid;
+    padding: 3px;
+    margin: 5px;
+    
+}
+div{
+    border: sienna solid;
+    padding: 3px ;
+}
+footer{
+border: green 1px solid;
+padding: 3px;
+margin: 5px;
+}
+
+header h1{
+    text-align: center
+};
