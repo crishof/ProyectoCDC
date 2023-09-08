@@ -1,24 +1,95 @@
-header{
-    border: green 1px solid;
-    padding: 3px;
-    margin: 5px;
-}
-main{
-    border: green 1px solid;
-    padding: 3px;
-    margin: 5px;
-    
-}
-div{
-    border: sienna solid;
-    padding: 3px ;
-}
-footer{
-border: green 1px solid;
-padding: 3px;
-margin: 5px;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto&family=Sofia&display=swap');
+
+*{
+    font-family:'Courier New', Courier, monospace;
 }
 
-header h1{
-    text-align: center
-};
+/*----------------------------------------------
+Estilos para el Header
+-----------------------------------------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: gray;
+    color: #f34444;
+}
+li {
+    display: inline-block;
+    gap:10px;
+    list-style: none;
+}
+
+a{
+    color: #c88f8f;
+}
+
+/*----------------------------------------------
+Estilos para el main
+-----------------------------------------------*/
+
+.banner{
+
+    display: flexbox;
+    align-items:center;
+    padding: 15px;
+    margin: 10px;
+    opacity: 1;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items:top;
+    padding: 15px;
+    margin: 10px;
+    border: #dddddd solid 5px;
+    height: auto;
+    
+}
+.caja{
+    display: wrap;
+    /* max-width: 25%; */
+    justify-content:center;
+    align-items: center;
+    padding: 10px;
+
+    border:#bebebe solid;
+    box-shadow: 3px 3px 5px #85ccf2;
+}
+.caja img{
+    border:#bebebe solid;
+    box-shadow: 3px 3px 5px #a3a0a0;
+    height: 250px;
+}
+
+
+
+/*----------------------------------------------
+Estilos para el footer
+-----------------------------------------------*/
+.pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: rgb(48, 103, 26);
+    color: #dddddd;
+    
+}
+
+.pie > div{
+    color: #dddddd
+}
+li {
+    display: inline-block;
+    gap:10px;
+}
+
+a{
+    color: #dddddd;
+}
+#copy {
+    font-size: 10px;
+    color:#dddddd;
+}
