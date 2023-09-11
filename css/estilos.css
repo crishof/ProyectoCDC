@@ -1,23 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto&family=Sofia&display=swap');
 
 *{
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Courier New', Courier, monospace !important;
+    
 }
 
-/*----------------------------------------------
+body{
+
+    background: #CCCCB2;
+    
+
+}
+
+/*
+---------------------------------------------
 Estilos para el Header
------------------------------------------------*/
+---------------------------------------------
+*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
-    background-color: gray;
+    
     color: #f34444;
+    background: #CCCCB2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #757519, #CCCCB2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #757519, #CCCCB2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 li {
-    display: inline-block;
     gap:10px;
     list-style: none;
 }
@@ -26,58 +38,112 @@ a{
     color: #c88f8f;
 }
 
-/*----------------------------------------------
+/*
+----------------------------------------------
+Estilos para la barra de menu
+----------------------------------------------*/
+
+nav {
+    /* background-color: rgb(233, 216, 196); */
+    /* border: 2px solid brown; */
+    border-radius: 10px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color:rgb(16, 16, 30);
+    padding: 6px 10px;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgb(141, 127, 7);
+    color: bisque;
+    border-radius: 10px;
+}
+
+/*
+---------------------------------------------
 Estilos para el main
------------------------------------------------*/
+----------------------------------------------*/
 
 .banner{
-
-    display: flexbox;
-    align-items:center;
-    padding: 15px;
-    margin: 10px;
-    opacity: 1;
+    margin: 20px;
+    align-items: center;
+    align-content: center;
+    height: 50%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .container{
+    display:flex;
     width: 80%;
-    background-color: burlywood;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     padding: 20px;
-    max-width: 1200px;   
+    max-width: 1200px;  
+    justify-content: space-between;
 }
 .caja{
+    background-color: #e1dcdc;
     display: inline-block;
+    align-items: center;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 18px;
     padding: 5px;
-    border:#fb7b31 solid;
-    box-shadow: 3px 3px 5px #d58c16;
+    border-radius: 5px;
+    border:#827f7f solid;
+    box-shadow: 3px 3px 5px #a3a0a0;
 }
 .caja img{
+    /* align-items: center; */
     border:#bebebe solid;
     box-shadow: 3px 3px 5px #a3a0a0;
     max-height: 250px;
 }
 
+hr{
+    border: #757519 solid;
+    height: 3px !important;
+    padding: 2px;
+    margin: 15px 0 15px 0;
+}
 
 
-/*----------------------------------------------
+/*
+----------------------------------------------
 Estilos para el footer
------------------------------------------------*/
+----------------------------------------------*/
+
+footer{
+    background: #CCCCB2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #757519, #CCCCB2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #757519, #CCCCB2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 .pie {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
-    background-color: rgb(48, 103, 26);
-    color: #dddddd;
+    color: #e91d1d;
+    
     
 }
 
 .pie > div{
-    color: #dddddd
+    color: #353232
 }
 li {
     display: inline-block;
@@ -85,9 +151,9 @@ li {
 }
 
 a{
-    color: #dddddd;
+    color: #040404;
 }
 #copy {
-    font-size: 10px;
-    color:#dddddd;
+    font-size: 20px;
+    color:#393737;
 }
