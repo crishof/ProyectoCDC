@@ -1,15 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto&family=Sofia&display=swap');
-
-*{
-    font-family:'Courier New', Courier, monospace !important;
-    
-}
 
 body{
 
     background: #CCCCB2;
-    
-
 }
 
 /*
@@ -17,10 +9,25 @@ body{
 Estilos para el Header
 ---------------------------------------------
 */
+h1{
+    text-align: center;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none!important;
+}
+
+a h1:hover {
+    color: rgb(130, 110, 86);
+    border-radius: 10px;
+    text-shadow: 10px 10px 10px #757519 ;
+}
+
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
     padding: 0px 20px;
     
     color: #f34444;
@@ -46,8 +53,8 @@ Estilos para la barra de menu
 nav {
     /* background-color: rgb(233, 216, 196); */
     /* border: 2px solid brown; */
-    border-radius: 10px;
-    margin: 10px 0px;
+    /* border-radius: 10px; */
+    /* margin: 10px 0px; */
     text-align: center;
 }
 
@@ -65,7 +72,7 @@ nav ul li a {
     color:rgb(16, 16, 30);
     padding: 6px 10px;
     display: block;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 nav ul li a:hover {
