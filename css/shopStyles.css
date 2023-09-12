@@ -1,0 +1,32 @@
+
+/*
+---------------------------------------------
+Estilos para el main
+----------------------------------------------*/
+
+.container{
+    display:flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    max-width: 1200px;  
+    justify-content: space-between;
+}
+.caja{
+    background-color: #e1dcdc;
+    display: inline-block;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    border:#827f7f solid;
+    box-shadow: 3px 3px 5px #a3a0a0;
+}
+.caja img{
+    /* align-items: center; */
+    border:#bebebe solid;
+    box-shadow: 3px 3px 5px #a3a0a0;
+    max-height: 250px;
+}
