@@ -19,9 +19,9 @@ a{
 }
 
 a h1:hover {
-    color: rgb(130, 110, 86);
+    color: rgb(50, 49, 48);
     border-radius: 10px;
-    text-shadow: 10px 10px 10px #757519 ;
+    text-shadow: 5px 5px 5px #757519 ;
 }
 
 header {
