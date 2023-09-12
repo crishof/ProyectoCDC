@@ -150,7 +150,7 @@ footer{
 .pie > div{
     color: #353232
 }
-li {
+ul li  a {
     display: inline-block;
     gap:10px;
 }
