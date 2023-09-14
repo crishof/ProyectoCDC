@@ -1,15 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto&family=Sofia&display=swap');
-
-*{
-    font-family:'Courier New', Courier, monospace !important;
-    
-}
 
 body{
-
     background: #CCCCB2;
-    
-
 }
 
 /*
@@ -79,53 +70,10 @@ nav ul li a:hover {
 Estilos para el main
 ----------------------------------------------*/
 
-.banner{
-    margin: 20px;
-    align-items: center;
-    align-content: center;
-    height: 50%;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-.container{
-    display:flex;
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    max-width: 1200px;  
-    justify-content: space-between;
-}
-.caja{
-    background-color: #e1dcdc;
-    display: inline-block;
-    align-items: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 18px;
-    padding: 5px;
-    border-radius: 5px;
-    border:#827f7f solid;
-    box-shadow: 3px 3px 5px #a3a0a0;
-}
-.caja img{
-    /* align-items: center; */
-    border:#bebebe solid;
-    box-shadow: 3px 3px 5px #a3a0a0;
-    max-height: 250px;
-}
-
 .imag {
     width: 400px;
     margin: 10px;
 }
-
-hr{
-    border: #757519 solid;
-    height: 3px !important;
-    padding: 2px;
-    margin: 15px 0 15px 0;
-}
-
 
 /*
 ----------------------------------------------
