@@ -1,7 +1,11 @@
 
+/* 
+paleta: #283c63 , #03824f, #c9fea0, #fec09a.
+ */
 body{
-
-    background: #CCCCB2;
+    margin: 0;
+    color: #283c63;
+    /* background: #CCCCB2; */
 }
 
 /*
@@ -9,41 +13,61 @@ body{
 Estilos para el Header
 ---------------------------------------------
 */
-h1{
-    text-align: center;
-    text-decoration: none;
+
+.site-header {
+    border-bottom: 1px solid #ccc;
+    padding: 5em 1em;
+    color: #f34444;
+    background: #ffffff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #757519, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #757519, hsl(0, 0%, 100%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.site-header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.site-identity{
+    float:left;
+    border: solid 1px #ccc;
+}
+.site-identity h1{
+    font-family: fantasy;
+    color: #283c63;
+    font-size: 1.5em;
+    margin: 1.3em 0 .3em 0;
+    display: block;
+}
+
+.site-identity img{
+    max-width: 55px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+.site-navigation{
+    float: right;
+}
+.site-navigation ul, li{
+    margin: 0;
+    padding: 0;
+}
+.site-navigation li{
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
 }
 
 a{
-    text-decoration: none!important;
+    text-decoration: none;
 }
 
 a h1:hover {
-    color: rgb(50, 49, 48);
+    color: #283c63;
     border-radius: 10px;
     text-shadow: 5px 5px 5px #757519 ;
 }
 
-header {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    padding: 0px 20px;
-    
-    color: #f34444;
-    background: #CCCCB2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #757519, #CCCCB2);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #757519, #CCCCB2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-li {
-    gap:10px;
-    list-style: none;
-}
-
-a{
-    color: #c88f8f;
-}
 
 /*
 ----------------------------------------------
@@ -108,9 +132,9 @@ Estilos para el footer
 ----------------------------------------------*/
 
 footer{
-    background: #CCCCB2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #757519, #CCCCB2);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #757519, #CCCCB2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ffffff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #757519, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #757519, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .pie {
     display: flex;
