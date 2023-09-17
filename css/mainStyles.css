@@ -22,7 +22,14 @@ a {
   width: 100%;
   z-index: 3;
 }
+.site-identity{
 
+  display: flex;
+  align-items: baseline;
+}
+.site-identity img{
+  max-width: 50px;
+}
 .site-identity a{
   font-family: fantasy;
   text-decoration: none;
@@ -51,7 +58,7 @@ a {
 }
 
 .site-header .site-identity {
-  /* display: block; */
+  /* display: flex; */
   float: left;
   font-size: 2em;
   padding: 10px 20px;
@@ -151,102 +158,9 @@ a {
   }
 }
 
-
-/* .site-header::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.site-identity{
-    float:left;
-    border: solid 1px #ccc;
-}
-.site-identity h1{
-    font-family: fantasy;
-    color: #283c63;
-    font-size: 1.5em;
-    margin: 1.3em 0 .3em 0;
-    display: block;
-}
-
-.site-identity img{
-    max-width: 55px;
-    float: left;
-    margin: 0 10px 0 0;
-}
-.site-navigation{
-    float: right;
-}
-.site-navigation ul, li{
-    margin: 0;
-    padding: 0;
-}
-.site-navigation li{
-    display: inline-block;
-    margin: 1.4em 1em 1em 1em;
-}
-
-a{
-    text-decoration: none;
-}
-
-a h1:hover {
-    color: #283c63;
-    border-radius: 10px;
-    text-shadow: 5px 5px 5px #757519 ;
-} */
-
-
-/*
-----------------------------------------------
-Estilos para la barra de menu
-----------------------------------------------*/
-
-/* nav {
-    background-color: rgb(233, 216, 196);
-    border: 2px solid brown;
-    border-radius: 10px;
-    margin: 10px 0px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li a {
-    color:rgb(16, 16, 30);
-    padding: 6px 10px;
-    display: block;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: rgb(141, 127, 7);
-    color: bisque;
-    border-radius: 10px; */
-/* } */
-
-/*
----------------------------------------------
+/*---------------------------------------------
 Estilos para el main
 ----------------------------------------------*/
-
-.banner{
-    margin: 20px;
-    align-items: center;
-    align-content: center;
-    height: 50%;
-    margin-left: 20%;
-    margin-right: 20%;
-}
 
 hr{
     border: #283c63 solid;
@@ -255,8 +169,7 @@ hr{
     margin: 15px 0 15px 0;
 }
 
-/*
-----------------------------------------------
+/*----------------------------------------------
 Estilos para el footer
 ----------------------------------------------*/
 
@@ -268,20 +181,22 @@ footer{
     color: #283c63;
 }
 .pie {
+  height: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;        
 }
 
-li {
-    display: inline-block;
-    gap:10px;
-}
-
 a{
-    margin: 0 5px 0 5px;
+  padding: 5px;
+    margin: 10 5px 10 5px;
     color: #283c63;
+}
+.pie a:hover{
+  position:relative;
+  color: #f4f4f4;
+  font-size: 2em;
 }
 #copy {
     font-size: 20px;
