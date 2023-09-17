@@ -29,9 +29,24 @@ Estilos para el Header
 }
 */
 
-.site-identity{
-    float:left;
-    border: solid 1px #ccc;
+.site-header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 #283c63;
+  position:fixed;
+  width: 100%;
+  z-index: 50;
+}
+
+.site-header .site-identity {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: solid 1px #ccc;
+}
+.site-identity img{
+  width: 80px;
 }
 
 .site-identity a{
@@ -39,13 +54,6 @@ Estilos para el Header
     text-decoration: none;
     color: #283c63;
 }
-  .site-header {
-    background-color: #fff;
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-  }
   
   .site-header ul {
     margin: 0;
@@ -70,13 +78,6 @@ Estilos para el Header
     border-radius: 20px;
   }
   
-  .site-header .site-identity {
-    display: block;
-    float: left;
-    font-size: 2em;
-    padding: 10px 20px;
-    text-decoration: none;
-  }
 /*
 ---------------------------------------------
 Estilos para el Menu
@@ -284,29 +285,26 @@ Estilos para el footer
 
 footer{
     background: #ffffff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #757519, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #757519, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to top, #283c63, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #283c63, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #283c63;
 }
 .pie {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
-    color: #e91d1d;
-    
-    
+    padding: 0px 20px;        
 }
 
-.pie > div{
-    color: #353232
-}
 li {
     display: inline-block;
     gap:10px;
 }
 
 a{
-    color: #040404;
+    margin: 0 5px 0 5px;
+    color: #283c63;
 }
 #copy {
     font-size: 20px;

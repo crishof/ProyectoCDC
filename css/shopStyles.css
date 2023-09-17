@@ -4,17 +4,18 @@
 Estilos para el main
 ----------------------------------------------*/
 
-.container{
-    display:flex;
+.catalogo{
+    display: inline-block;
     width: 80%;
     margin: auto;
     padding: 20px;
     max-width: 1200px;  
     justify-content: space-between;
 }
-.caja{
+.producto{
+    height: 500px;
+    display: block;
     background-color: #e1dcdc;
-    display: inline-block;
     align-items: center;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -24,9 +25,8 @@ Estilos para el main
     border:#827f7f solid;
     box-shadow: 3px 3px 5px #a3a0a0;
 }
-.caja img{
+.producto img{
     /* align-items: center; */
     border:#bebebe solid;
     box-shadow: 3px 3px 5px #a3a0a0;
-    max-height: 250px;
 }
