@@ -25,15 +25,12 @@ a h1:hover {
 }
 
 header {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    padding: 0px 20px;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 20px;
+    background-color: #071952;
     
-    color: #f34444;
-    background: #CCCCB2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #757519, #CCCCB2);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #757519, #CCCCB2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 li {
@@ -56,6 +53,8 @@ nav {
     /* border-radius: 10px; */
     /* margin: 10px 0px; */
     text-align: center;
+    background-color: #088395;
+    padding: 10px;
 }
 
 nav ul {
@@ -72,6 +71,8 @@ nav ul li a {
     color:rgb(16, 16, 30);
     padding: 6px 10px;
     display: block;
+    border-radius: 10px;
+    background-color: #35a29f;
     /* text-decoration: none; */
 }
 
@@ -85,47 +86,15 @@ nav ul li a:hover {
 ---------------------------------------------
 Estilos para el main
 ----------------------------------------------*/
-
+main{
+    background-color: #f2f7a1;
+}
 .banner{
-    margin: 20px;
-    align-items: center;
-    align-content: center;
-    height: 50%;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-.container{
-    display:flex;
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    max-width: 1200px;  
-    justify-content: space-between;
-}
-.caja{
-    background-color: #e1dcdc;
-    display: inline-block;
-    align-items: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 18px;
-    padding: 5px;
-    border-radius: 5px;
-    border:#827f7f solid;
-    box-shadow: 3px 3px 5px #a3a0a0;
-}
-.caja img{
-    /* align-items: center; */
-    border:#bebebe solid;
-    box-shadow: 3px 3px 5px #a3a0a0;
-    max-height: 250px;
+   text-align: center;
 }
 
-hr{
-    border: #757519 solid;
-    height: 3px !important;
-    padding: 2px;
-    margin: 15px 0 15px 0;
+.banner img{
+    padding: 10px;
 }
 
 
