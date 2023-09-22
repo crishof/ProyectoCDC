@@ -1,0 +1,85 @@
+/* 
+paleta: #283c63 , #03824f, #c9fea0, #fec09a.
+        EBE4D1    B4B4B3    26577C      E55604    
+        071952      088395      35A29F       F2F7A1
+ */
+body {
+    margin: 0;
+    font-family: 'Montserrat',Helvetica, sans-serif;
+}
+
+/* header */
+
+header{
+    background-color: #40e0d0;
+}
+
+.site-header {
+  height: 200px;
+    width: 100%;
+    padding: 20px;
+}
+.site-identity {
+display: flex;
+}
+.site-identity img {
+  max-width: 90px;
+}
+.site-identity a {
+  font-family: 'Abril Fatface';
+  font-size: 150%;
+  text-decoration: none;
+}
+
+.site-navigation{
+display: flex;
+justify-content: space-between;
+}
+
+ul {
+  margin: 0;
+  padding: 10px;
+}
+
+.nav li a {
+  padding: 10px;
+  text-decoration: none;
+  background-color: #283c63;
+  color: #f45b60;
+  border-radius: 20px;
+}
+
+.nav li a:hover,
+.nav .menu-btn:hover {
+  background-color: #485164;
+  color: #f4f4f4;
+  border-radius: 20px;
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+a {
+  padding: 5px;
+  margin: 10 5px 10 5px;
+  color: #283c63;
+}
+.nav-icons a:hover {  
+  color: #f4f4f4;
+  font-size: 2em;
+}
+
+footer {
+text-align: center;
+  color: #283c63;
+  border: 1px solid black;
+}
+
+#copy {
+  font-size: 20px;
+  color: #393737;
+}
