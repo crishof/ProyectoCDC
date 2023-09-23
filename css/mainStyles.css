@@ -1,135 +1,204 @@
 
-body{
-
-    background: #CCCCB2;
-}
-
-/*
----------------------------------------------
-Estilos para el Header
----------------------------------------------
-*/
-h1{
-    text-align: center;
-    text-decoration: none;
-}
-
-a{
-    text-decoration: none!important;
-}
-
-a h1:hover {
-    color: rgb(130, 110, 86);
-    border-radius: 10px;
-    text-shadow: 10px 10px 10px #757519 ;
-}
-
-header {
-    display: flex; 
-    justify-content: space-around; 
-    align-items: center; 
-    padding: 20px;
-    background-color: #071952;
-    
-}
-
-li {
-    gap:10px;
-    list-style: none;
-}
-
-a{
-    color: #c88f8f;
-}
-
-/*
-----------------------------------------------
-Estilos para la barra de menu
-----------------------------------------------*/
-
-nav {
-    /* background-color: rgb(233, 216, 196); */
-    /* border: 2px solid brown; */
-    /* border-radius: 10px; */
-    /* margin: 10px 0px; */
-    text-align: center;
-    background-color: #088395;
-    padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-nav ul li {
+/* 
+paleta: #283c63 , #03824f, #c9fea0, #fec09a.
+ */
+ body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  a {
+    color: #000;
+  }
+  
+  /* header */
+  
+  .site-header {
     display: inline-block;
-}
-
-nav ul li a {
-    color:rgb(16, 16, 30);
-    padding: 6px 10px;
-    display: block;
-    border-radius: 10px;
-    background-color: #35a29f;
-    /* text-decoration: none; */
-}
-
-nav ul li a:hover {
-    background-color: rgb(141, 127, 7);
-    color: bisque;
-    border-radius: 10px;
-}
-
-/*
----------------------------------------------
-Estilos para el main
-----------------------------------------------*/
-main{
-    background-color: #f2f7a1;
-}
-.banner{
-   text-align: center;
-}
-
-.banner img{
-    padding: 10px;
-}
-
-
-/*
-----------------------------------------------
-Estilos para el footer
-----------------------------------------------*/
-
-footer{
-    background: #CCCCB2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #757519, #CCCCB2);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #757519, #CCCCB2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.pie {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    /* position:fixed; */
+    width: 100%;
+    z-index: 3;
+  }
+  .site-identity{
+  
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
-    color: #e91d1d;
-    
-    
-}
-
-.pie > div{
-    color: #353232
-}
-li {
-    display: inline-block;
-    gap:10px;
-}
-
-a{
-    color: #040404;
-}
-#copy {
-    font-size: 20px;
-    color:#393737;
-}
+    align-items: baseline;
+  }
+  .site-identity img{
+    max-width: 50px;
+  }
+  .site-identity a{
+    font-family: fantasy;
+    text-decoration: none;
+  }
+  
+  .site-header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .site-header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  
+  .site-header li a:hover,
+  .site-header .menu-btn:hover {
+    background-color: #283c63;
+    color: #f4f4f4;
+    border-radius: 20px;
+  }
+  
+  .site-header .site-identity {
+    /* display: flex; */
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .site-header .nav {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .site-header .menu-icon {
+    cursor: pointer;
+    /* display: inline-block; */
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .site-header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .site-header .menu-icon .navicon:before,
+  .site-header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .site-header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .site-header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .site-header .menu-btn {
+    display: none;
+  }
+  
+  .site-header .menu-btn:checked ~ .nav {
+    max-height: 240px;
+  }
+  
+  .site-header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .site-header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .site-header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .site-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .site-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .site-header li {
+      float: left;
+    }
+    .site-header li a {
+      padding: 20px 30px;
+    }
+    .site-header .nav {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .site-header .menu-icon {
+      display: none;
+    }
+  }
+  
+  /*---------------------------------------------
+  Estilos para el main
+  ----------------------------------------------*/
+  
+  hr{
+      border: #283c63 solid;
+      height: 3px;
+      padding: 2px;
+      margin: 15px 0 15px 0;
+  }
+  
+  /*----------------------------------------------
+  Estilos para el footer
+  ----------------------------------------------*/
+  
+  footer{
+      background: #ffffff;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to top, #283c63, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to top, #283c63, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+      color: #283c63;
+  }
+  .pie {
+    height: 200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 20px;        
+  }
+  
+  a{
+    padding: 5px;
+      margin: 10 5px 10 5px;
+      color: #283c63;
+  }
+  .pie a:hover{
+    position:relative;
+    color: #f4f4f4;
+    font-size: 2em;
+  }
+  #copy {
+      font-size: 20px;
+      color:#393737;
+  }
