@@ -1,4 +1,25 @@
 .imag {
     width: 400px;
     margin: 10px;
+    
+
+}
+
+.art {
+    display: inline-block;
+    margin: 10px 20px;
+}
+.art1 {
+    
+    margin: 5px;
+    display: inline-block;
+
+
+}
+.art .art1 .imag {
+    position: relative;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 2px, solid, #283c63;
 }
