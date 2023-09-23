@@ -9,17 +9,55 @@
     display: inline-block;
     margin: 10px 20px;
 }
+
 .art1 {
     
     margin: 5px;
+    grid-area: 10px;
     display: inline-block;
-
-
 }
+
 .art .art1 .imag {
     position: relative;
     margin: 10px;
     justify-content: center;
     align-items: center;
     border: 2px, solid, #283c63;
+}
+
+.guardia {
+    background-color:#283c63;
+    color: aliceblue;
+    padding: 20px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.guardia .map .mapmenu {
+    display: flex;
+    margin: 10px;
+    border: 2px, solid, #283c63;
+    border-radius: 10%;
+    gap: 10px;
+    justify-content:space-evenly
+}
+
+.guardia ul {
+    gap: 10px;
+    list-style: none;;
+}
+
+.guardia li p {
+    text-decoration: none;
+
+}
+
+.guardia li p:hover {
+    background-color: rgb(105, 105, 217);
+    animation: 0.5s infinite botonmap;
+}
+@keyframes botonmap {
+    0% {transform: scaleX(1.0);}    
+    50% {transform: scaleX(1.15);}
+    100% {transform: scaleX(1.0);}
 }

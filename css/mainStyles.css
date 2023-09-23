@@ -24,7 +24,7 @@ paleta: #283c63 , #03824f, #c9fea0, #fec09a.
   .site-identity{
   
     display: flex;
-    align-items: baseline;
+    align-items: center;
   }
   .site-identity img{
     max-width: 50px;
