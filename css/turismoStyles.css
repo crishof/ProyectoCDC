@@ -6,26 +6,44 @@ paleta: #283c63 , #03824f, #c9fea0, #fec09a.
 body {
     margin: 0;
     font-family: 'Montserrat',Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-/* header */
+/* header -------------------------------------------------------------------*/
 
 header{
     background-color: #40e0d0;
+    height: 30%;
 }
 
 .site-header {
   height: 200px;
     width: 100%;
     padding: 20px;
+    display: grid; 
+
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 10px;
 }
 .site-identity {
-display: flex;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . .";  
 }
-.site-identity img {
+.logo img {
   max-width: 90px;
 }
-.site-identity a {
+
+.titulo{
+  text-align: center;
+  align-content: center;
+}
+.titulo a {
   font-family: 'Abril Fatface';
   font-size: 150%;
   text-decoration: none;
@@ -61,6 +79,8 @@ ul {
   justify-content: space-around;
   align-items: center;
   padding: 0px 20px;
+  border: 1px solid #283c63;
+  border-radius: 20px;
 }
 
 a {
@@ -73,7 +93,59 @@ a {
   font-size: 2em;
 }
 
+/* main ----------------------------------------------------------------------- */
+main{
+  height: 60%;
+  width: 100%;
+  background-color: #e2b6b8;
+  
+}
+main div{
+  width: 100%;
+  height: 100%;
+  
+}
+#contenedor{
+  text-align: center;
+  padding: 10px;
+}
+
+#productos{
+  display: flex;
+  justify-content: space-evenly;  
+  align-items: center;  
+  padding: 0 10%;
+  height: 500px;
+}
+
+.producto{
+  width: 25%;
+  border: 1px solid rgb(116, 116, 116);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px rgba(141, 130, 130,0.7), -2px -2px 10px rgba(173, 171, 171, 0.7)inset;
+}
+
+.producto:hover{
+  border-radius: 40px;
+}
+
+.producto img{
+  width: 50%;
+  /* 
+      Para hacer un círculo de la imagen (si es cuadrada)
+  */
+  border-radius: 50%;
+}
+
+.producto img:hover{
+  box-shadow: 1px 1px 2px black;
+}
+
+/* footer ----------------------------------------------------------------------- */
 footer {
+  height: 10%;
 text-align: center;
   color: #283c63;
   border: 1px solid black;
