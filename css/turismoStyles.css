@@ -49,9 +49,9 @@ header{
   text-decoration: none;
 }
 
-.site-navigation{
+.nav{
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 }
 
 ul {
@@ -74,24 +74,7 @@ ul {
   border-radius: 20px;
 }
 
-.nav-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0px 20px;
-  border: 1px solid #283c63;
-  border-radius: 20px;
-}
 
-a {
-  padding: 5px;
-  margin: 10 5px 10 5px;
-  color: #283c63;
-}
-.nav-icons a:hover {  
-  color: #f4f4f4;
-  font-size: 2em;
-}
 
 /* main ----------------------------------------------------------------------- */
 main{
@@ -145,12 +128,27 @@ main div{
 
 /* footer ----------------------------------------------------------------------- */
 footer {
-  height: 10%;
+height: 20%;
 text-align: center;
-  color: #283c63;
-  border: 1px solid black;
+color: #283c63;
 }
 
+.nav-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-icons a {
+  padding: 5px;
+  margin: 10 5px 10 5px;
+  color: #283c63;
+}
+.nav-icons a:hover {  
+  color: #f4f4f4;
+  font-size: 2em;
+}
 #copy {
   font-size: 20px;
   color: #393737;
