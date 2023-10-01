@@ -27,14 +27,10 @@ header{
     gap: 10px;
 }
 .site-identity {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . .";  
+    display: flex;
+    justify-content: space-around;
 }
+
 .logo img {
   max-width: 90px;
 }
@@ -44,18 +40,16 @@ header{
   align-content: center;
 }
 .titulo a {
-  font-family: 'Abril Fatface';
+  font-family: 'Croissant One','Abril Fatface';
   font-size: 150%;
   text-decoration: none;
 }
-
-.nav{
-display: flex;
-justify-content: space-around;
+.site-navigation{
+  display:flex ;
+  justify-content: center;
 }
 
-ul {
-  margin: 0;
+.nav li{
   padding: 10px;
 }
 
@@ -115,11 +109,11 @@ main div{
 }
 
 .producto img{
-  width: 50%;
+  width: 80%;
   /* 
       Para hacer un círculo de la imagen (si es cuadrada)
   */
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 .producto img:hover{
