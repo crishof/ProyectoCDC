@@ -1,0 +1,15 @@
+.pawimg{
+    height: 25px;
+    width: 25px;
+    margin: auto;
+    display: block;
+    color: #283c63;
+}
+
+.about-text{
+    text-align: center;
+}
+
+h3{
+    color: #283c63;
+}
