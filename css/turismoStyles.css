@@ -5,45 +5,70 @@ paleta: #283c63 , #03824f, #c9fea0, #fec09a.
  */
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Montserrat',Helvetica, sans-serif;
     box-sizing: border-box;
 }
+
+
+
 
 /* header -------------------------------------------------------------------*/
 
 header{
     background-color: #40e0d0;
     height: 30%;
+    padding: 10px;
+    border: 1px solid black;
 }
 
 .site-header {
-  height: 200px;
     width: 100%;
-    padding: 20px;
     display: grid; 
-
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
     grid-template-columns: 1fr;
     gap: 10px;
 }
+
+/* ------------------------------------ */
 .site-identity {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+  display: flex;
+  justify-content: space-around;
+  background-color: yellow;
+  width: 20%;
+}
+
+img {
+  max-width: 100%; /* Asegura que las imágenes sean responsive */
+  height: auto;
+  margin: 5px; /* Agrega espacio entre las imágenes */
 }
 
 .logo img {
-  max-width: 90px;
+max-width: 100px;
+
 }
 
 .titulo{
   text-align: center;
   align-content: center;
+  border: 1px solid black;
+  width: 60%;
 }
-.titulo a {
+
+h1 {
+  font-size: 4em; 
   font-family: 'Croissant One','Abril Fatface';
-  font-size: 150%;
-  text-decoration: none;
+  color:#0056B3 ;
 }
+
+/* ------------------------------- */
 .site-navigation{
   display:flex ;
   justify-content: center;
@@ -57,7 +82,7 @@ header{
   padding: 10px;
   text-decoration: none;
   background-color: #283c63;
-  color: #f45b60;
+  color:white;
   border-radius: 20px;
 }
 
@@ -146,4 +171,39 @@ color: #283c63;
 #copy {
   font-size: 20px;
   color: #393737;
+}
+
+
+/* Media Query----------------------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+  header{
+    background-color: antiquewhite;
+}
+
+  .site-header{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ height: auto;
+
+  }
+  .site-identity{
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 11px 0px; 
+
+    
+  }
+
+  .site-navigation{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 480px) {
+
 }
