@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,14 +60,21 @@
             <div class="producto">
                 <h2>Montañas y bosques</h2>
                 <img src="assets/images/turismo/turismo-1.jpg" alt="Producto">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, labore. Reprehenderit.</p>
-                <p>Precio: <strong>consultar</strong></p>
+                <p class="justo">¡Explora las montañas en compañía de tu mejor amigo de cuatro patas! 🐾
+                    La aventura no tiene por qué ser solitaria. 
+                    Las montañas son el lugar perfecto, donde tanto tú como tu mascota pueden disfrutar de la belleza natural juntos.<br>
+                    🌲 Descubre rutas de senderismo pintorescas que son perfectas para explorar en equipo.<br>
+                    🏡 Encuentra alojamientos acogedores que aceptan mascotas, para que todos se sientan como en casa.<br>
+                    🌳 Pasa tiempo de calidad en parques y áreas especiales para perros, donde ellos también pueden disfrutar de la naturaleza.<br>
+                    📸 Comparte momentos inolvidables y captura las mejores fotos con tu peludo compañero.<br>
+                    Las montañas te esperan, y juntos, ¡crearán recuerdos que durarán toda la vida! Ven y únete a la aventura.</p>
+                    <p>Precio: <a href="#consultar"><strong>consultar</strong></a></p>
             </div>
             <div class="producto">
                 <h2>Mar y arena</h2>
                 <img src="assets/images/turismo/turismo-2.jpg" alt="Producto">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, labore. Reprehenderit.</p>
-                <p>Precio: <strong>consultar</strong></p>
+                <p>Precio: <a href="#consultar"><strong>consultar</strong></a></p>
             </div>
             <div class="producto">
                 <h2>Ciudad y shopping</h2>
@@ -76,6 +83,18 @@
                 <p>Precio: <strong>consultar</strong></p>
             </div>                        
         </div> 
+        <section id="consultar">
+            <h2>Formulario de Consulta</h2>
+    <form action="procesar_consulta.php" method="POST">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre:" required><br><br>
+        <input type="email" id="email" name="email" placeholder="email:" required><br><br>
+
+        <label for="consulta">Consulta:</label><br>
+        <textarea id="consulta" name="consulta" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Enviar Consulta">
+    </form>
+        </section>
     </div>
     
 </main>
