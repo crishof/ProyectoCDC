@@ -3,22 +3,18 @@ body {
     font-family: 'Montserrat',Helvetica, sans-serif;
     box-sizing: border-box;
 }
-/* header -------------------------------------------------------------------*/
 
-header{
-    background-color: #40e0d0;
-    height: 30%;
+.contenedor {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: auto;
 }
-
+/* header -------------------------------------------------------------------*/
 .site-header {
-    height: 200px;
+    background-color: #40e0d0;
+    height: auto;
     width: 100%;
     padding: 20px;
-    display: grid; 
-  
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    gap: 10px;
 }
 
 .site-identity {
@@ -42,7 +38,8 @@ header{
 }
 
 .site-navigation{
-    display:flex ;
+    background-color: #40e0d0;
+    display: flex;
     justify-content: center;
 }
   
@@ -67,18 +64,18 @@ header{
 
 /* main ----------------------------------------------------------------------- */
 main{
-    height: 60%;
+    height: auto;
     width: 100%;
-    background-color: #e2b6b8;
-    
-}
-main div{
-    width: 100%;
-    height: 100%;
+    background-color: #e2b6b8;   
 }
 
 h3{
     color: #283c63;
+}
+
+.quienes {
+    width: 100%;
+    height: auto;
 }
 
 .pawimg{
@@ -93,11 +90,14 @@ h3{
     text-align: center;
 }
 
+.valores {
+    list-style: none;
+}
 
 
 /* footer ----------------------------------------------------------------------- */
 footer {
-    height: 20%;
+    height: auto;
     text-align: center;
     color: #283c63;
 }
@@ -115,11 +115,32 @@ footer {
     color: #283c63;
 }
 .nav-icons a:hover {  
-    color: #f4f4f4;
-    font-size: 2em;
+    color:#0056B3 ;
 }
 #copy {
     font-size: 20px;
     color: #393737;
+}
+/*---------------------------------------------
+Media Queries
+----------------------------------------------*/
+@media (max-width: 768px) {
+    h1{
+      font-size: 2.5em;
+    }
+  
+    .titulo{
+      width: 100%;
+      text-align: center;
+    }
+    
+    .logo img {
+      display: none;
+      }
+    
+      .site-navigation{
+        display: flex;
+        flex-direction: column;
+      }
 }
     

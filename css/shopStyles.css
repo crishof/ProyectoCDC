@@ -1,32 +1,163 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat',Helvetica, sans-serif;
+    box-sizing: border-box;
+}
 
-/*
----------------------------------------------
+.contenedor {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: auto;
+}
+/*---------------------------------------------
+Estilos para el header
+----------------------------------------------*/
+.site-header {
+    background-color: #40e0d0;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.site-identity {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo img {
+    max-width: 90px;
+}
+  
+.titulo{
+    text-align: center;
+    align-content: center;
+}
+
+.titulo a {
+    font-family: 'Croissant One','Abril Fatface';
+    font-size: 150%;
+    text-decoration: none;
+}
+
+.site-navigation{
+    background-color: #40e0d0;
+    display: flex;
+    justify-content: center;
+}
+  
+.nav li{
+    padding: 10px;
+}
+  
+.nav li a {
+    padding: 10px;
+    text-decoration: none;
+    background-color: #283c63;
+    color: #f45b60;
+    border-radius: 20px;
+}
+  
+.nav li a:hover,
+.nav .menu-btn:hover {
+    background-color: #485164;
+    color: #f4f4f4;
+    border-radius: 20px;
+}
+/*---------------------------------------------
 Estilos para el main
 ----------------------------------------------*/
+main{
+    height: auto;
+    width: 100%;
+    background-color: #e2b6b8;   
+}
 
 .catalogo{
-    display: inline-block;
+    display: flex;
     width: 80%;
     margin: auto;
     padding: 20px;
     max-width: 1200px;  
-    justify-content: space-between;
 }
 .producto{
+    color: #283c63;
     height: 500px;
     display: block;
     background-color: #e1dcdc;
     align-items: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px 10px 5px;
     font-size: 18px;
     padding: 5px;
     border-radius: 5px;
-    border:#827f7f solid;
-    box-shadow: 3px 3px 5px #a3a0a0;
+    border:#283c63 solid;
+    box-shadow: 3px 3px 5px #283c63;
+}
+.producto h3 {
+    font-weight: bold;
 }
 .producto img{
     /* align-items: center; */
-    border:#bebebe solid;
+    margin: 3px;
+    height: 15em;
+    width: 15em;
+    border:#283c63 solid;
     box-shadow: 3px 3px 5px #a3a0a0;
 }
+.producto:hover {
+    border-radius: 10px;
+}
+.producto .btn-vermas{
+    color: #283c63;
+    border-radius: 10px;
+}
+/*---------------------------------------------
+Estilos para el footer
+----------------------------------------------*/
+footer {
+    height: auto;
+    text-align: center;
+    color: #283c63;
+}
+    
+.nav-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+    
+.nav-icons a {
+    padding: 5px;
+    margin: 10 5px 10 5px;
+    color: #283c63;
+}
+.nav-icons a:hover {  
+    color:#0056B3 ;
+}
+#copy {
+    font-size: 20px;
+    color: #393737;
+}
+/*---------------------------------------------
+Media Queries
+----------------------------------------------*/
+@media (max-width: 768px) {
+    h1{
+      font-size: 2.5em;
+    }
+  
+    .titulo{
+      width: 100%;
+      text-align: center;
+    }
+    
+    .logo img {
+      display: none;
+      }
+    
+      .site-navigation{
+        display: flex;
+        flex-direction: column;
+      }
+  }
+  
