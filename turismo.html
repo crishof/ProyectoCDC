@@ -1,62 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiel Compañero</title>
 
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/Logo.png">
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/estilos.css">
-
-    <link rel="shortcut icon" href="img/icon_pdf.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/turismoStyles.css">
+    <!-- Font family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Sedgwick+Ave+Display&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
+    
+    <header class="site-header">  <!--display:grid --> 
+        <div class="site-identity"> <!--display:flex--> 
+            <div class="logo">
 
-<header>
-    <div>
-        <a href="index.html"><h1>Fiel Compañero</h1></a>
-    </div>
+                    <img src="assets/images/Logo.png" alt="Logo">
 
-</header>
-<nav>
-    <div>
-    <ul>
-        <li><a href="about.html">Sobre Nosotros</a> </li>
-        <li><a href="shop.html">Shop</a> </li>
-        <li><a href="turismo.html">Turismo Pet Friendly</a> </li>
-        <li><a href="consejos.html">Consejos para tu mascota</a> </li>
-        <li><a href="adopcion.html">Adopciones</a> </li>
-    </ul>
+                    <img src="assets/images/turismo/flight_travel_icon.png" alt="flight_travel_icon">
+
+            </div>
+            <div class="titulo">
+                <h1>Fiel Compañero<h1/>
+            </div>
+            <div class="logo">
+                <img src="assets/images/turismo/backpack_travel_icon.png" alt="backpack_travel_icon">
+            
+                <img src="assets/images/Logo.png" alt="Logo">
+            </div>
+        </div>
+        <div class="site-navigation"> <!--display:flex--> 
+                <nav>
+                    <ul class="nav">
+                        <li><a href="about.html">Sobre Nosotros</a></li>
+                        <li><a href="shop.html">Shop</a> </li>
+                        <li><a href="consejos.html">Consejos para tu mascota</a></li>
+                        <li><a href="adopcion.html">Adopciones</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+<main class="site-main">
+    <div id="contenedor">
+        <div id="productos">
+            <div class="producto">
+                <h2>Montañas y bosques</h2>
+                <img src="assets/images/turismo/turismo-1.jpg" alt="Producto">
+                <p class="justo">¡Explora las montañas en compañía de tu mejor amigo de cuatro patas! 🐾
+                    La aventura no tiene por qué ser solitaria. 
+                    Las montañas son el lugar perfecto, donde tanto tú como tu mascota pueden disfrutar de la belleza natural juntos.<br>
+                    🌲 Descubre rutas de senderismo pintorescas que son perfectas para explorar en equipo.<br>
+                    🏡 Encuentra alojamientos acogedores que aceptan mascotas, para que todos se sientan como en casa.<br>
+                    🌳 Pasa tiempo de calidad en parques y áreas especiales para perros, donde ellos también pueden disfrutar de la naturaleza.<br>
+                    📸 Comparte momentos inolvidables y captura las mejores fotos con tu peludo compañero.<br>
+                    Las montañas te esperan, y juntos, ¡crearán recuerdos que durarán toda la vida! Ven y únete a la aventura.</p>
+                    <p>Precio: <a href="#consultar"><strong>consultar</strong></a></p>
+            </div>
+            <div class="producto">
+                <h2>Mar y arena</h2>
+                <img src="assets/images/turismo/turismo-2.jpg" alt="Producto">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, labore. Reprehenderit.</p>
+                <p>Precio: <a href="#consultar"><strong>consultar</strong></a></p>
+            </div>
+            <div class="producto">
+                <h2>Ciudad y shopping</h2>
+                <img src="assets/images/turismo/turismo-3.jpg" alt="Producto">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, labore. Reprehenderit.</p>
+                <p>Precio: <strong>consultar</strong></p>
+            </div>                        
+        </div> 
+        <section id="consultar">
+            <h2>Formulario de Consulta</h2>
+    <form action="procesar_consulta.php" method="POST">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre:" required><br><br>
+        <input type="email" id="email" name="email" placeholder="email:" required><br><br>
+
+        <label for="consulta">Consulta:</label><br>
+        <textarea id="consulta" name="consulta" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Enviar Consulta">
+    </form>
+        </section>
     </div>
-</nav>
-<hr>
-<main>
     
 </main>
 
-<hr>
+
     
     <footer class="pie">
-        <div>
-            <p><span id="copy">&copy;</span> FielCompañero - 2023</p>
+        <div class="nav-icons">
+            <a href="#"><span class="fab fa-facebook"></span></a>
+            <a href="#"><span class="fab fa-instagram"></span></a>
+            <a href="#"><span class="fab fa-twitter"></span></a>
+            <a href="#"><span class="fab fa-whatsapp"></span></a>
+            <a href="#"><span class="fas fa-envelope"></span></a>
         </div>
         <div>
-            <h2>Contactenos</h2>
-            <div class="footer-icons">
-                <a href="#"><span class="fab fa-facebook"></span></a>
-                <a href="#"><span class="fab fa-instagram"></span></a>
-                <a href="#"><span class="fab fa-twitter"></span></a>
-                <a href="#"><span class="fab fa-whatsapp"></span></a>
-                <a href="#"><span class="fas fa-envelope"></span></a>
-            </div>
+            <p><span id="copy">&copy;</span> FielCompañero - 2023</p>
         </div>
     </footer>
 

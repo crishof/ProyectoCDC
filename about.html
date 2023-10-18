@@ -5,60 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiel Compañero</title>
 
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/Logo.png">
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/estilos.css">
+    <!--Animations-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    <link rel="shortcut icon" href="img/icon_pdf.png" type="image/x-icon">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/aboutStyles.css">
+    <!-- Font family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Sedgwick+Ave+Display&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-<header>
-    <div>
-        <a href="index.html"><h1>Fiel Compañero</h1></a>
-    </div>
-
-</header>
-<nav>
-    <div>
-    <ul>
-        <li><a href="about.html">Sobre Nosotros</a> </li>
-        <li><a href="shop.html">Shop</a> </li>
-        <li><a href="turismo.html">Turismo Pet Friendly</a> </li>
-        <li><a href="consejos.html">Consejos para tu mascota</a> </li>
-        <li><a href="adopcion.html">Adopciones</a> </li>
-    </ul>
-    </div>
-</nav>
-<hr>
-<main>
-    
-</main>
-
-<hr>
-    
-    <footer class="pie">
-        <div>
-            <p><span id="copy">&copy;</span> FielCompañero - 2023</p>
+    <div class="contenedor">
+        <header class="site-header">
+            <div class="site-identity">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/Logo.png" alt="Logo"></a>
+                </div>
+                <div class="logo">
+                    <img src="assets/images/turismo/flight_travel_icon.png" alt="" class="animate__animated animate__pulse animate__infinite">
+                </div>
+                <div class="titulo">
+                    <h1><a href="index.html">Fiel Compañero</a><h1/>
+                </div>
+                <div class="logo">
+                    <img src="assets/images/turismo/backpack_travel_icon.png" alt="" class="animate__animated animate__pulse animate__infinite">
+                </div>
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/Logo.png" alt="Logo"></a>
+                </div>
+            </div>
+        </header>
+        <div class="site-navigation">
+            <nav>
+                <ul class="nav">
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="shop.html">Shop</a> </li>
+                    <li><a href="turismo.html">Turismo Pet Friendly</a></li>
+                    <li><a href="consejos.html">Consejos para tu mascota</a></li>
+                    <li><a href="adopcion.html">Adopciones</a></li>
+                </ul>
+            </nav>
         </div>
-        <div>
-            <h2>Contactenos</h2>
-            <div class="footer-icons">
+    
+        <main>
+            <div class="quienes">
+                <article class="about-text">
+                    <h3><b>Quiénes somos</b></h3>
+                    <p><i>Fiel Compañero</i> nace en el año 2023 del deseo de un grupo de personas por transformar la realidad que viven los animales en el país.</p>
+                    <p>Los animales acompañan a los seres humanos en el día a día desde hace siglos. Han tomado un rol cada vez más fundamental en nuestra vida cotidiana. Sin embargo, no podemos evitar notar que, aún en tiempos modernos, persiste un maltrato sistemático hacia ellos. Son menospreciados, abandonados, considerados menos que las personas. Incluso llegan a ser brutalmente asesinados en el peor de los casos.</p>
+                    <p>Es por esto que como organización nos propusimos tomar el asunto en nuestras propias manos para que nuestros fieles compañeros tengan la vida que se merecen.</p>
+                </article>
+                <img src="./assets/images/dogPaw.png" alt="Dog Paw" class="pawimg">
+            </div>
+    
+            <div class="quienes">
+                <article class="about-text">
+                    <h3><b>Nuestra misión</b></h3>
+                    <p>Nuestro objetivo es crear una plataforma que principalmente sirva como nexo entre animales abandonados y/o rescatados y posibles adoptantes. De este modo, buscamos conseguirles una familia responsable que sea capaz de brindarles el amor que merecen.</p>
+                    <p>También buscamos ayudar a la gente que ya tiene mascotas a mejorar la calidad de vida de las mismas. Para esto, ofrecemos productos interesantes para mascotas a través de nuestra <i>eShop</i>, así como también diversas opciones de actividades turísticas que son ideales para que puedan disfrutar de viajes junto con sus dueños.</p>
+                    <p>Otra de nuestras razones de ser es la lucha contra la desinformación. Darle un hogar a un animal es algo que conlleva mucha responsabilidad y compromiso, y comprendemos que para muchas personas puede resultar complicado, sobre todo si lo hacen por primera vez. Es por esto que buscamos brindar consejos sobre cómo criar mascotas adecuadamente, así como también dar información sobre centros veterinarios a los que se puede acudir en caso de ser necesario</p>
+                </article>
+                <img src="./assets/images/dogPaw.png" alt="Dog Paw" class="pawimg">
+            </div>
+    
+            <div class="quienes">
+                <article class="about-text">
+                    <h3><b>Nuestra visión</b></h3>
+                    <p>Hacer de la Argentina un lugar libre de especismo, animales abandonados y desinformación.</p>
+                </article>
+    
+                <img src="./assets/images/dogPaw.png" alt="Dog Paw" class="pawimg">
+            </div>
+        
+            <div class="quienes">
+                <article class="about-text">
+                    <h3><b>Nuestros Valores</b></h3>
+                    <ul class="valores">
+                        <li>Cero tolerancia ante el maltrato a los animales. Son seres que sienten y merecen tener derechos que los protejan.</li>
+                        <li>Responsabilidad a la hora de adoptar. Una mascota no es un hobby, es un compañero para toda la vida.</li>
+                    </ul>
+                </article>
+                <img src="./assets/images/dogPaw.png" alt="Dog Paw" class="pawimg">
+            </div>
+        </main>
+        
+        <footer class="pie">
+            <div class="nav-icons">
                 <a href="#"><span class="fab fa-facebook"></span></a>
                 <a href="#"><span class="fab fa-instagram"></span></a>
                 <a href="#"><span class="fab fa-twitter"></span></a>
                 <a href="#"><span class="fab fa-whatsapp"></span></a>
                 <a href="#"><span class="fas fa-envelope"></span></a>
             </div>
-        </div>
-    </footer>
+            <div>
+                <p><span id="copy">&copy;</span> FielCompañero - 2023</p>
+            </div>
+        </footer>
+    </div>
 
     <!-- JavaScript -->
 

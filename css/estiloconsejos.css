@@ -1,3 +1,4 @@
+
 .imag {
     width: 400px;
     margin: 10px;
@@ -61,3 +62,11 @@
     50% {transform: scaleX(1.15);}
     100% {transform: scaleX(1.0);}
 }
+
+
+.imag {
+    width: 400px;
+    margin: 10px;
+}
+
+
