@@ -29,14 +29,14 @@
 
                     <img src="assets/images/Logo.png" alt="Logo">
 
-                    <img src="assets/images/turismo/flight_travel_icon.png" alt="flight_travel_icon">
+                    <img src="assets/images/turismo/flight_travel_icon.png" alt="flight_travel_icon" class="bounce">
 
             </div>
             <div class="titulo">
                 <h1>Fiel Compañero<h1/>
             </div>
             <div class="logo">
-                <img src="assets/images/turismo/backpack_travel_icon.png" alt="backpack_travel_icon">
+                <img src="assets/images/turismo/backpack_travel_icon.png" alt="backpack_travel_icon" class="bounce">
             
                 <img src="assets/images/Logo.png" alt="Logo">
             </div>
@@ -55,7 +55,11 @@
     </header>
 <!-- ------------------------------------------------------------------------------------------------------------------ -->
 <main class="site-main">
+    
     <div id="contenedor">
+        <div class="titulo_2">
+            <h2>Turismo Pet Friendly</h2>
+        </div>
         <div id="productos">
             <div class="producto">
                 <h2>Montañas y bosques</h2>
@@ -89,7 +93,8 @@
         <input type="text" id="nombre" name="nombre" placeholder="Nombre:" size="30" maxlength="50" >
         <span id="error-nombre"></span>
         <br><br>
-        <input type="email" id="email" name="email" placeholder="email:"><br><br>
+        <input type="email" id="email" name="email" placeholder="email:">
+        <span id="error-email"></span><br><br>
         <label for="interes">Consulta: </label>
         <select name=interes id="interes">
             <option value="Elegir">Elegir
@@ -97,9 +102,11 @@
             <option value="Clientes">Mar
             <option value="Proveedores">Ciudad
         </select>
+        <span id="error-interes"></span>
         <br><br>
-        <textarea id="consulta" name="consulta" rows="4"  maxlength="200"></textarea><br><br>
-
+        <textarea id="consulta" name="consulta" rows="4"  maxlength="200"></textarea>
+        <span id="error-consulta"></span>
+        <br><br>
         <!--<input type="submit" value="Enviar Consulta">-->
         <input type="button" id="b1" value="Enviar" onclick="validarEnviar()">
     </form>
