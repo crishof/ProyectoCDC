@@ -1,4 +1,61 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat',Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+/* header -------------------------------------------------------------------*/
+.site-header {
+    background-color: #40e0d0;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+}
 
+.site-identity {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo img {
+    max-width: 90px;
+}
+  
+.titulo{
+    text-align: center;
+    align-content: center;
+}
+
+.titulo a {
+    font-family: 'Croissant One','Abril Fatface';
+    font-size: 150%;
+    text-decoration: none;
+}
+
+.site-navigation{
+    background-color: #40e0d0;
+    display: flex;
+    justify-content: center;
+}
+  
+.nav li{
+    padding: 10px;
+}
+  
+.nav li a {
+    padding: 10px;
+    text-decoration: none;
+    background-color: #283c63;
+    color: #f45b60;
+    font-weight: bold;
+    border-radius: 20px;
+}
+  
+.nav li a:hover,
+.nav .menu-btn:hover {
+    background-color: #485164;
+    color: #f4f4f4;
+    border-radius: 20px;
+}
 .imag {
     width: 400px;
     margin: 10px;
@@ -68,5 +125,85 @@
     width: 400px;
     margin: 10px;
 }
+
+/* footer ----------------------------------------------------------------------- */
+footer {
+    height: auto;
+    text-align: center;
+    color: #283c63;
+}
+    
+.nav-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+    
+.nav-icons a {
+    padding: 5px;
+    margin: 10 5px 10 5px;
+    color: #283c63;
+}
+.nav-icons a:hover {  
+    color:#0056B3 ;
+}
+#copy {
+    font-size: 20px;
+    color: #393737;
+}
+/*---------------------------------------------
+Media Queries
+----------------------------------------------*/
+@media (min-width: 768px) and (max-width: 840px) {
+    h1{
+      font-size: 2.5em;
+    }
+  
+    .titulo{
+      width: 100%;
+      text-align: center;
+    }
+    
+    .site-navigation ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .site-navigation ul li a{
+        display: inline-block;
+        text-align: center;
+        width: 90vw;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    h1{
+      font-size: 2.5em;
+    }
+  
+    .titulo{
+      width: 100%;
+      text-align: center;
+    }
+    
+    .logo img {
+      display: none;
+    }
+    
+    .site-navigation ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .site-navigation ul li a{
+        display: inline-block;
+        text-align: center;
+        width: 90vw;
+    }
+
+  }
+   
 
 
