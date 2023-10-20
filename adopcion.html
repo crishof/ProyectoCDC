@@ -11,95 +11,101 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+    <!--Animations-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/adopcionStyles.css">
 
+    <!-- Font family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Sedgwick+Ave+Display&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <header class="site-header">
         <div class="site-identity">
             <div class="logo">
                 <a href="index.html"><img src="assets/images/Logo.png" alt="Logo"></a>
             </div>
             <div class="logo">
-                <img src="assets/images/adopcion/cat_house pet_icon.png" alt="">
+                <img src="assets/images/adopcion/cat.png" alt="" class="animate__animated animate__pulse animate__infinite">
             
             </div>
             <div class="titulo">
                 <h1><a href="index.html">Fiel Compañero</a><h1/>
             </div>
             <div class="logo">
-                <img src="assets/images/adopcion/husky dog_icon.png" alt="">
+                <img src="assets/images/adopcion/corgi.png" alt="" class="animate__animated animate__pulse animate__infinite">
             </div>
             <div class="logo">
                 <a href="index.html"><img src="assets/images/Logo.png" alt="Logo"></a>
             </div>
         </div>
-        <div class="site-navigation">
-                <nav>
-                    <ul class="nav">
-                        <li><a href="about.html">Sobre Nosotros</a></li>
-                        <li><a href="shop.html">Shop</a> </li>
-                        <li><a href="turismo.html">Turismo Pet Friendly</a></li>
-                        <li><a href="consejos.html">Consejos para tu mascota</a></li>
-                    </ul>
-                </nav>
-        </div>
     </header>
+
+    <nav class="site-navigation">
+        <ul class="nav">
+            <li><a href="about.html">Sobre Nosotros</a></li>
+            <li><a href="shop.html">Shop</a> </li>
+            <li><a href="turismo.html">Turismo Pet Friendly</a></li>
+            <li><a href="consejos.html">Consejos para tu mascota</a></li>
+            <li><a href="adopcion.html">Adopciones</a></li>
+        </ul>
+    </nav>
 <!-- -------------------------------------------------------------------------------------------------------- -->
-<main class="site-main">
-    <div class="container mt-5">
-        <h1 class="text-center">Formulario de Adopción de Mascotas</h1>
-        <form>
-            <div class="form-group">
-                <label for="nombre">Nombre Completo</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre completo">
-            </div>
-            <div class="form-group">
-                <label for="correo">Correo Electrónico</label>
-                <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo electrónico">
-            </div>
-            <div class="form-group">
-                <label for="telefono">Número de Teléfono</label>
-                <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono">
-            </div>
-            <div class="form-group">
-                <label for="mascota">Mascota que Desea Adoptar</label>
-                <select class="form-control" id="mascota">
-                    <option>Seleccione una mascota</option>
-                    <option>Perro</option>
-                    <option>Gato</option>
-                    <option>Otro</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="razon">Razón para Adoptar</label>
-                <textarea class="form-control" id="razon" rows="4" placeholder="Por favor, cuéntenos por qué desea adoptar una mascota"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
-        </form>
-    
-</main>
+    <main class="site-main">
+        <div class="container mt-5">
+            <h1 class="text-center">Formulario de Adopción de Mascotas</h1>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre completo">
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo electrónico">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Número de Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono">
+                </div>
+                <div class="form-group">
+                    <label for="mascota">Mascota que Desea Adoptar</label>
+                    <select class="form-control" id="mascota">
+                        <option>Seleccione una mascota</option>
+                        <option>Perro</option>
+                        <option>Gato</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="razon">Razón para Adoptar</label>
+                    <textarea class="form-control" id="razon" rows="4" placeholder="Por favor, cuéntenos por qué desea adoptar una mascota"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+            </form>
+        </div>
+    </main>
 
     
-<footer class="pie">
-    <div class="nav-icons">
-        <a href="#"><span class="fab fa-facebook"></span></a>
-        <a href="#"><span class="fab fa-instagram"></span></a>
-        <a href="#"><span class="fab fa-twitter"></span></a>
-        <a href="#"><span class="fab fa-whatsapp"></span></a>
-        <a href="#"><span class="fas fa-envelope"></span></a>
-    </div>
-    <div>
-        <p><span id="copy">&copy;</span> FielCompañero - 2023</p>
-    </div>
-</footer>
+    <footer class="pie">
+        <div class="nav-icons">
+            <a href="#"><span class="fab fa-facebook"></span></a>
+            <a href="#"><span class="fab fa-instagram"></span></a>
+            <a href="#"><span class="fab fa-twitter"></span></a>
+            <a href="#"><span class="fab fa-whatsapp"></span></a>
+            <a href="#"><span class="fas fa-envelope"></span></a>
+        </div>
+        <div>
+            <p><span id="copy">&copy;</span> FielCompañero - 2023</p>
+        </div>
+    </footer>
 
     <!-- JavaScript -->
 
