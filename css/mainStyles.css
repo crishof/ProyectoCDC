@@ -38,7 +38,6 @@ body {
 }
 
 .site-navigation{
-  background-color: #40e0d0;
   display: flex;
   justify-content: center;
 }
@@ -68,9 +67,29 @@ main{
   height: auto;
   width: 100%;
   background-color: #e2b6b8;  
-  display: flex; 
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+}
+aside{
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+aside button{
+  padding: 5px;
 }
 
+.banner {
+  display: flex;
+  overflow: hidden; /
+}
+
+.banner img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+  margin-right: 10px; 
+}
 
 /* footer ----------------------------------------------------------------------- */
 footer {

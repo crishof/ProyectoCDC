@@ -3,52 +3,74 @@ paleta: #283c63 , #03824f, #c9fea0, #fec09a.
         EBE4D1    B4B4B3    26577C      E55604    
         071952      088395      35A29F       F2F7A1
  */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat',Helvetica, sans-serif;
-    box-sizing: border-box;
+ body {
+  margin: 0;
+  font-family: 'Montserrat',Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
-
-
+.contenedor {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: auto;
+}
 
 /* header -------------------------------------------------------------------*/
 
-header{
-    background-color: #40e0d0;
-    height: 30%;
-}
-
 .site-header {
-    width: 100%;
-    display: grid; 
-    grid-template-rows: 1fr 0.5fr;
-    grid-template-columns: 1fr;
-    gap: 10px;
+  background-color: #40e0d0;
+  height: auto;
+  width: 100%;
+  padding: 20px;
 }
 
-/* ------------------------------------ */
 .site-identity {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.logo{
   display: flex;
   justify-content: space-around;
-  width: 20%;
-}
-
-img {
-  max-width: 100%; 
-  height: auto;
-  margin: 5px; 
 }
 
 .logo img {
-max-width: 100px;
+  max-width: 90px;
+}
+
+.titulo{
+  text-align: center;
+  align-content: center;
+
+}
+.titulo a {
+  font-family: 'Croissant One','Abril Fatface';
+  font-size: 150%;
+  text-decoration: none;
+}
+.site-navigation{
+  display: flex;
+  justify-content: center;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-around;
+}
+.nav li{
+  padding: 10px;
+  text-decoration: none;
+}
+
+.nav li a {
+  padding: 10px;
+  text-decoration: none;
+  background-color: #283c63;
+  color: #f45b60;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.nav li a:hover,
+.nav .menu-btn:hover {
+  background-color: #485164;
+  color: #f4f4f4;
+  border-radius: 20px;
 }
 
 /*--------- ANIMACION  ----------------*/
@@ -111,52 +133,6 @@ max-width: 100px;
   90% { -webkit-transform: translate3d(0,-4px,0); transform: translate3d(0,-4px,0);
   }
   } 
-
-.titulo{
-  text-align: center;
-  align-content: center;
-  width: 60%;
-}
-
-h1 {
-  font-size: 4em; 
-  font-family: 'Croissant One','Abril Fatface';
-  color:#0056B3 ;
-}
-
-/* ------------------------------- */
-.site-navigation{
-  display: flex;
-  justify-content: center;
-}
-
-.nav{
-  display:flex ;
-  justify-content: space-around;
-}
-
-.nav li{
-  padding: 10px;
-  list-style:none;
-}
-
-.nav li a {
-  padding: 10px;
-  text-decoration: none;
-  background-color: #283c63;
-  color: #f45b60;
-  font-weight: bold;
-  border-radius: 20px;
-}
-
-.nav li a:hover,
-.nav .menu-btn:hover {
-  background-color: #485164;
-  color: #f4f4f4;
-  border-radius: 20px;
-}
-
-
 
 /* main ----------------------------------------------------------------------- */
 main{
@@ -257,10 +233,49 @@ color: #283c63;
 
 /* Media Query----------------------------------------------------------------------------*/
 
-@media (max-width: 768px) {
+/*---------------------------------------------
+Media Queries
+----------------------------------------------*/
+@media (min-width: 768px) and (max-width: 840px) {
+  h1{
+  font-size: 2.5em;
+  }
+  .titulo{
+  width: 100%;
+  text-align: center;
+  }
+  
+  .site-navigation ul{
+      display: flex;
+      flex-direction: column;
+  }
+  .site-navigation ul li a{
+      display: inline-block;
+      text-align: center;
+      width: 90vw;
+  }
 }
 
-
-@media (max-width: 480px) {
-
+@media (max-width: 768px) {
+  h1{
+  font-size: 2.5em;
+  }
+  .titulo{
+  width: 100%;
+  text-align: center;
+  }
+  
+  .logo img {
+  display: none;
+  }
+  
+  .site-navigation ul{
+      display: flex;
+      flex-direction: column;
+  }
+  .site-navigation ul li a{
+      display: inline-block;
+      text-align: center;
+      width: 90vw;
+  }
 }
