@@ -65,9 +65,6 @@
 <main class="site-main">
     
     <div id="contenedor">
-        <div class="titulo_2">
-            <h2>Turismo Pet Friendly</h2>
-        </div>
         <div id="productos">
             <div class="producto">
                 <h2>Montañas y bosques</h2>
@@ -85,39 +82,65 @@
             <div class="producto">
                 <h2>Mar y arena</h2>
                 <img src="assets/images/turismo/turismo-2.jpg" alt="Producto">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, labore. Reprehenderit.</p>
+                <p class="justo">🌊 ¡Lleva a tu compañero a una aventura en el mar! 🐾
+
+                    Los momentos más especiales se comparten con aquellos que queremos,
+                    y eso incluye a nuestros amigos de cuatro patas. En el mar, donde las olas y 
+                    la brisa marina se mezclan con la alegría de los perros corriendo en la arena.
+                    <br>
+                    🏖️ Relájate bajo el sol mientras tu mascota disfruta de la playa a su manera.
+                    🌞 Descubre playas y calas secretas donde tú y tu peludo amigo pueden explorar juntos.
+                    🏨 Elige entre una variedad de alojamientos que dan la bienvenida a las mascotas, para una estadía cómoda y relajante.
+                    🐾 Participa en actividades divertidas, como paseos por la orilla y deportes acuáticos adaptados para mascotas.
+                    
+                    Las playas [Nombre de tu Destino de Playa] están listas para recibirte y a tu mejor amigo. ¡Ven a disfrutar de 
+                    unas vacaciones inolvidables junto a tu mascota!</p>
                 <p>Precio: <a href="#consultar"><strong>consultar</strong></a></p>
             </div>
             <div class="producto">
                 <h2>Ciudad y shopping</h2>
                 <img src="assets/images/turismo/turismo-3.jpg" alt="Producto">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, labore. Reprehenderit.</p>
-                <p>Precio: <strong>consultar</strong></p>
+                <p class="justo">🏙️ Descubre la ciudad con tu fiel compañero de cuatro patas 🐾
+
+                    La ciudad es un destino pet-friendly, donde tanto tú como tu mascota pueden explorar juntos el ajetreo 
+                    y el bullicio de la vida urbana.
+                    <br>
+                    🏞️ Parques y espacios verdes en cada esquina para paseos relajantes y juegos divertidos.
+                    <br>
+                    🏨 Amplia selección de alojamientos que dan la bienvenida a las mascotas para una estancia cómoda.
+                    <br>
+                    🍽️ Restaurantes y cafeterías con áreas exteriores donde tus mascotas son bienvenidas.
+                    <br>
+                    🛍️ Explora boutiques y tiendas pet-friendly, donde encontrarás todo lo que necesitas para tu compañero peludo.
+                    
+                    La ciudad es el escenario perfecto para crear recuerdos inolvidables con tu mascota. 
+                    ¡Ven y únete a la diversión urbana!</p>
+                    <p>Precio: <a href="#consultar"><strong>consultar</strong></a></p>
             </div>                        
         </div> 
         <section id="consultar">
             <h2>Formulario de Consulta</h2>
-    <form name="fvalida">
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre:" size="30" maxlength="50" >
-        <span id="error-nombre"></span>
-        <br><br>
-        <input type="email" id="email" name="email" placeholder="email:">
-        <span id="error-email"></span><br><br>
-        <label for="interes">Consulta: </label>
-        <select name=interes id="interes">
-            <option value="Elegir">Elegir
-            <option value="Comercial">Montañas
-            <option value="Clientes">Mar
-            <option value="Proveedores">Ciudad
-        </select>
-        <span id="error-interes"></span>
-        <br><br>
-        <textarea id="consulta" name="consulta" rows="4"  maxlength="200"></textarea>
-        <span id="error-consulta"></span>
-        <br><br>
-        <!--<input type="submit" value="Enviar Consulta">-->
-        <input type="button" id="b1" value="Enviar" onclick="validarEnviar()">
-    </form>
+            <form name="fvalida">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre:" size="30" maxlength="50" >
+                <span id="error-nombre"></span>
+                <br><br>
+                <input type="email" id="email" name="email" placeholder="email:">
+                <span id="error-email"></span><br><br>
+                <label for="interes">Consulta: </label>
+                <select name=interes id="interes">
+                    <option value="Elegir">Elegir
+                    <option value="Comercial">Montañas
+                    <option value="Clientes">Mar
+                    <option value="Proveedores">Ciudad
+                </select>
+                <span id="error-interes"></span>
+                <br><br>
+                <textarea id="consulta" name="consulta" rows="4"  maxlength="200"></textarea>
+                <span id="error-consulta"></span>
+                <br><br>
+                <!--<input type="submit" value="Enviar Consulta">-->
+                <input type="button" id="b1" value="Enviar" onclick="validarEnviar()">
+            </form>
         </section>
     </div>
     
