@@ -44,6 +44,7 @@ body {
 
 .nav li{
   padding: 10px;
+  font-family: 'Montserrat','Courier New', Courier, monospace;
 }
 
 .nav li a {
@@ -68,26 +69,44 @@ main{
   width: 100%;
   background-color: #e2b6b8;  
   display: grid;
-  grid-template-columns: 2fr 1fr; 
+  grid-template-rows: repeat(2, auto) ;
+  padding: 20px;
+}
+
+.texto{
+  text-align: justify;
+  font-family: 'Montserrat',Helvetica, sans-serif;
+}
+.imagenes{
+display: grid;
+grid-template-columns: 2fr 1fr;
 }
 aside{
-  border: 1px solid black;
   padding: 10px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 aside button{
   padding: 5px;
+  border-radius: 5px;
+  background-color: #6e9e92;
+}
+#contenido {
+  width: 250px; /* Ancho fijo para el contenedor de imágenes */
+  height: 250px; /* Altura fija para el contenedor de imágenes */
+  overflow: hidden; /* Oculta partes de imágenes que excedan el tamaño del contenedor */
 }
 
-.banner {
-  display: flex;
-  overflow: hidden; /
+#imagen-perro {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 100%; /* Asegura que la imagen ocupe todo el alto del contenedor */
+  object-fit: cover; /* Recorta la imagen para que se ajuste al contenedor sin deformarse */
 }
 
 .banner img {
   width: 100%;
   height: auto; 
-  object-fit: cover;
   margin-right: 10px; 
 }
 

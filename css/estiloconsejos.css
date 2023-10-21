@@ -56,31 +56,26 @@ body {
     color: #f4f4f4;
     border-radius: 20px;
 }
+
+/* main -------------------------*/
+
+main{
+    height: auto;
+    width: 100%;
+    background-color: #e2b6b8;
+    padding: 20px;
+    
+}
 .imag {
     width: 400px;
     margin: 10px;
-    
-
 }
 
 .art {
-    display: inline-block;
     margin: 10px 20px;
 }
-
-.art1 {
-    
-    margin: 5px;
-    grid-area: 10px;
-    display: inline-block;
-}
-
-.art .art1 .imag {
-    position: relative;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-    border: 2px, solid, #283c63;
+.art1 p{
+    text-align: justify;
 }
 
 .guardia {
@@ -93,11 +88,10 @@ body {
 
 .guardia .map .mapmenu {
     display: flex;
+    flex-wrap: wrap;
     margin: 10px;
     border: 2px, solid, #283c63;
     border-radius: 10%;
-    gap: 10px;
-    justify-content:space-evenly
 }
 
 .guardia ul {
@@ -121,48 +115,43 @@ body {
 }
 
 
-.imag {
-    width: 400px;
-    margin: 10px;
-}
-
 /* footer ----------------------------------------------------------------------- */
 footer {
-    height: auto;
+    height: 20%;
     text-align: center;
     color: #283c63;
-}
+    }
     
-.nav-icons {
+    .nav-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-}
+    }
     
-.nav-icons a {
+    .nav-icons a {
     padding: 5px;
     margin: 10 5px 10 5px;
     color: #283c63;
-}
-.nav-icons a:hover {  
+    }
+    .nav-icons a:hover {  
     color:#0056B3 ;
-}
-#copy {
+    }
+    #copy {
     font-size: 20px;
     color: #393737;
-}
+    }
 /*---------------------------------------------
 Media Queries
 ----------------------------------------------*/
 @media (min-width: 768px) and (max-width: 840px) {
     h1{
-      font-size: 2.5em;
+    font-size: 2.5em;
     }
-  
+
     .titulo{
-      width: 100%;
-      text-align: center;
+    width: 100%;
+    text-align: center;
     }
     
     .site-navigation ul{
@@ -175,21 +164,20 @@ Media Queries
         text-align: center;
         width: 90vw;
     }
+}
 
-  }
-
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     h1{
-      font-size: 2.5em;
+    font-size: 2.5em;
     }
-  
+
     .titulo{
-      width: 100%;
-      text-align: center;
+    width: 100%;
+    text-align: center;
     }
     
     .logo img {
-      display: none;
+    display: none;
     }
     
     .site-navigation ul{
