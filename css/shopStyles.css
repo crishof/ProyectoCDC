@@ -146,12 +146,12 @@ Media Queries
 ----------------------------------------------*/
 @media (min-width: 768px) and (max-width: 890px) {
     h1{
-      font-size: 2.5em;
+    font-size: 2.5em;
     }
-  
+
     .titulo{
-      width: 100%;
-      text-align: center;
+    width: 100%;
+    text-align: center;
     }
     
     .site-navigation ul{
@@ -165,16 +165,16 @@ Media Queries
         width: 90vw;
     }
 
-  }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     h1{
-      font-size: 2.5em;
+    font-size: 1.9em;
     }
-  
+
     .titulo{
-      width: 100%;
-      text-align: center;
+    width: 100%;
+    text-align: center;
     }
 
     .contenedor{
@@ -182,7 +182,7 @@ Media Queries
     }
     
     .logo img {
-      display: none;
+    display: none;
     }
     
     .site-navigation ul{
@@ -196,5 +196,4 @@ Media Queries
         width: 90vw;
     }
 
-  }
-  
+}
