@@ -14,7 +14,7 @@ body {
   background-color: #40e0d0;
   height: auto;
   width: 100%;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
 }
 
 .site-identity {
@@ -35,12 +35,14 @@ body {
   font-family: 'Croissant One','Abril Fatface';
   font-size: 150%;
   text-decoration: none;
+  color: #233892;
 }
 
 .site-navigation{
   background-color: #40e0d0;
   display: flex;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .nav li{
@@ -67,9 +69,8 @@ body {
 main{
   height: auto;
   width: 100%;
-  background-color: #e2b6b8;   
-  padding: 10px;
-  
+  background-image: linear-gradient(180deg, #40e0d0 0%, #cbe6e7 100%);  
+  padding: 1px 20px 1px 20px;
 }
 
 
@@ -79,13 +80,14 @@ footer {
   height: auto;
   text-align: center;
   color: #283c63;
+  background-color: #cbe6e7;
+  padding-bottom: 20px;
 }
   
 .nav-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
 }
   
 .nav-icons a {
