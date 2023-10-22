@@ -154,17 +154,25 @@ main{
   min-height: 100vh;
 }
 
-#productos{
+/* #productos{
 
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 30px;
 
+} */
+
+#productos{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
+
 .justo{
   text-align: justify;
 }
 .producto{
+  max-width: 380px;
   border: 1px solid rgb(116, 116, 116);
   padding: 20px;
   box-sizing: border-box;
@@ -172,6 +180,7 @@ main{
   box-shadow: 3px 3px 5px rgba(141, 130, 130,0.7), -2px -2px 10px rgba(173, 171, 171, 0.7)inset;
   background-color:#f9d289;
   text-align: center;
+  margin: 5px 10px 5px;
 }
 
 .producto:hover{
@@ -263,6 +272,11 @@ Media Queries
   h1{
   font-size: 2.5em;
   }
+
+  #contenedor {
+    grid-template-columns: 100vw;
+  }
+
   .titulo{
   width: 100%;
   text-align: center;

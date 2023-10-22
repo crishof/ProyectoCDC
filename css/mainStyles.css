@@ -76,10 +76,17 @@ main{
 .texto{
   text-align: justify;
   font-family: 'Montserrat',Helvetica, sans-serif;
+  font-weight: bold;
 }
-.imagenes{
+/* .imagenes{
 display: grid;
 grid-template-columns: 2fr 1fr;
+} */
+
+.imagenes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 aside{
   padding: 10px;
@@ -139,7 +146,7 @@ footer {
 /*---------------------------------------------
 Media Queries
 ----------------------------------------------*/
-@media (min-width: 768px) and (max-width: 840px) {
+@media (min-width: 768px) and (max-width: 880px) {
   h1{
     font-size: 2.5em;
   }
@@ -165,6 +172,10 @@ Media Queries
 @media (max-width: 768px) {
   h1{
     font-size: 2.5em;
+  }
+
+  .contenedor{
+    grid-template-columns: 100vw;
   }
 
   .titulo{

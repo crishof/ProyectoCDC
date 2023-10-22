@@ -66,6 +66,13 @@ main{
     padding: 20px;
     
 }
+
+iframe{
+    width: 350px;
+    height: 300px;
+    border: 0;
+}
+
 .imag {
     width: 400px;
     margin: 10px;
@@ -73,9 +80,15 @@ main{
 
 .art {
     margin: 10px 20px;
+    font-weight: bolder;
 }
 .art1 p{
     text-align: justify;
+}
+
+.video{
+    width: 560px;
+    height: 315px;
 }
 
 .guardia {
@@ -88,6 +101,7 @@ main{
 
 .guardia .map .mapmenu {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 10px;
     border: 2px, solid, #283c63;
@@ -169,6 +183,15 @@ Media Queries
 @media (max-width: 768px) {
     h1{
     font-size: 2.5em;
+    }
+
+    iframe{
+        width: 60vw;
+    }
+
+    .video{
+        width: auto;
+        height: auto;
     }
 
     .titulo{

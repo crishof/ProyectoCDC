@@ -69,7 +69,7 @@ main{
     width: 100%;
     background-color: #e2b6b8;   
     padding: 20px;
-    
+
 }
 
 h3{
@@ -156,6 +156,11 @@ Media Queries
     h1{
     font-size: 2.5em;
     }
+
+    .contenedor{
+        grid-template-columns: 100vw;
+    }
+
     .titulo{
     width: 100%;
     text-align: center;

@@ -144,7 +144,7 @@ footer {
 /*---------------------------------------------
 Media Queries
 ----------------------------------------------*/
-@media (min-width: 768px) and (max-width: 840px) {
+@media (min-width: 768px) and (max-width: 890px) {
     h1{
       font-size: 2.5em;
     }
@@ -175,6 +175,10 @@ Media Queries
     .titulo{
       width: 100%;
       text-align: center;
+    }
+
+    .contenedor{
+        grid-template-columns: 100vw;
     }
     
     .logo img {
